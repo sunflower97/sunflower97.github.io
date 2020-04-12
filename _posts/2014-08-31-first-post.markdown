@@ -5,7 +5,7 @@ date: 2020-04-12 19:00:00
 categories: post
 ---
 
-<span class="image featured"><img src="https://source.unsplash.com/1a7gs0IYEU8/1600x900" alt=""></span>
+<span class="image featured"><img src="https://source.unsplash.com/1a7gs0IYEU8/473x210" alt=""></span>
 Chắc hẳn rằng bạn sẽ không quên được nếu đã từng xem qua một clip bên Trung Quốc, có một cậu bé đã không do dự một giây nào cả, lao ra khỏi chiếc xe đang dừng lại của mẹ cậu và nhảy xuống cầu. Mẹ cậu bé không kịp giữ con lại và chắc hẳn cô ấy sẽ hối hận suốt cuộc đời này.
 
 Xã hội ngày càng phát triển, kéo theo những gánh nặng trong cuộc sống, tiền bạc, các mối quan hệ, thể diện,… khiến cho các bậc làm cha làm mẹ quên mất rằng những đứa con của mình là những chú chim nhỏ đang chờ đợi để sải đôi cánh của mình tung bay lên bầu trời. Họ dùng kinh nghiệm của họ, những kí ức tuổi thơ đã qua, những suy nghĩ trong sự bận rộn của họ hay chính là những nuối tiếc về ước mơ của bản thân đã bỏ lỡ để “dạy dỗ, yêu thương” con cái của họ.

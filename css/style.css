@@ -1,5 +1,5 @@
 @import url("font-awesome.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
 
 /*
 	Twenty by HTML5 UP
@@ -28,7 +28,7 @@
 
 	body, input, select, textarea {
 		color: #7c8081;
-		font-family: 'Lato', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -509,7 +509,7 @@
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
-		font-weight: 900;
+		font-weight: 800;
 		letter-spacing: 2px;
 		min-width: 18em;
 		padding: 0 0.75em;
@@ -628,7 +628,7 @@
 	}
 
 		#header h1 {
-			font-weight: 900;
+			font-weight: 800;
 			margin: 0;
 		}
 
@@ -695,7 +695,7 @@
 				}
 
 				#header nav .cc-active {
-					font-weight: 900;
+					font-weight: 800;
 				}
 
 		#header.reveal {
@@ -845,7 +845,7 @@
 					border-bottom: solid 2px;
 					border-top: solid 2px;
 					font-size: 2.5em;
-					font-weight: 900;
+					font-weight: 800;
 					letter-spacing: 0.2em;
 					margin: 0;
 					padding-left: 0.05em;
@@ -1065,7 +1065,7 @@
 
 			#topPanel .link.depth-0,
 			#sidePanel .link.depth-0 {
-				font-weight: 900;
+				font-weight: 800;
 			}
 
 			#topPanel .link:first-child,
