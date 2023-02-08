@@ -20,7 +20,8 @@ export default function PostList({ post, aspect, preloadImage }) {
           className={cx(
             "relative overflow-hidden transition-all bg-gray-100 rounded-md dark:bg-gray-800   hover:scale-105",
             aspect === "landscape" ? "aspect-video" : "aspect-square"
-          )}>
+          )}
+        >
           <Link href={`/post/${post.slug.current}`}>
             <a>
               {imageProps ? (
@@ -55,7 +56,8 @@ export default function PostList({ post, aspect, preloadImage }) {
           bg-no-repeat
           transition-[background-size]
           duration-500
-          hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]">
+          hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]"
+            >
               {post.title}
             </span>
           </Link>
@@ -74,7 +76,7 @@ export default function PostList({ post, aspect, preloadImage }) {
         <div className="flex items-center mt-3 space-x-3 text-gray-500 dark:text-gray-400">
           <div className="flex items-center gap-3">
             <div className="relative flex-shrink-0 w-5 h-5">
-              {post.author.image && (
+              {post.author?.image && (
                 <Image
                   src={AuthorimageProps.src}
                   blurDataURL={AuthorimageProps.blurDataURL}
@@ -88,14 +90,15 @@ export default function PostList({ post, aspect, preloadImage }) {
                 />
               )}
             </div>
-            <span className="text-sm">{post.author.name}</span>
+            <span className="text-sm">{post.author?.name}</span>
           </div>
           <span className="text-xs text-gray-300 dark:text-gray-600">
             &bull;
           </span>
           <time
             className="text-sm"
-            dateTime={post?.publishedAt || post._createdAt}>
+            dateTime={post?.publishedAt || post._createdAt}
+          >
             {format(
               parseISO(post?.publishedAt || post._createdAt),
               "MMMM dd, yyyy"

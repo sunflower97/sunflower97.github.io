@@ -1,5 +1,4 @@
 import Container from "@components/container";
-import ThemeSwitch from "@components/themeSwitch";
 import Image from "next/image";
 import { myLoader } from "@utils/all";
 import VercelLogo from "../public/img/vercel.svg";
@@ -14,7 +13,7 @@ export default function Footer(props) {
       <div className="flex justify-center gap-1 mt-1 text-sm text-center text-gray-500 dark:text-gray-600">
         <span>
           {" "}
-          Made by{" "}
+          Base on{" "}
           {/*  // ** 🙏  Can I ask you a favor? 🙏 **
             // Please do not remove the below link.
            // It helps us to grow & continue our work. Thank you.
@@ -22,7 +21,8 @@ export default function Footer(props) {
           <a
             href="https://web3templates.com/?ref=stablo-template"
             rel="noopener"
-            target="_blank">
+            target="_blank"
+          >
             Web3Templates
           </a>
         </span>
@@ -32,18 +32,20 @@ export default function Footer(props) {
           <a
             href="https://github.com/web3templates/stablo"
             rel="noopener"
-            target="_blank">
+            target="_blank"
+          >
             Github
           </a>
         </span>
       </div>
       <div className="flex items-center justify-between mt-2">
-        <div className="mt-5">
+        <div className="mt-5 hidden">
           <a
             href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
             target="_blank"
             rel="noopener"
-            className="relative block w-44">
+            className="relative block w-44"
+          >
             <Image
               src={VercelLogo}
               layout="fixed"
@@ -55,9 +57,7 @@ export default function Footer(props) {
             />
           </a>
         </div>
-        <ThemeSwitch />
       </div>
-      <Backlink />
     </Container>
   );
 }
@@ -68,14 +68,16 @@ const Backlink = () => {
       href="https://web3templates.com/templates/stablo-minimal-blog-website-template"
       target="_blank"
       rel="noopener"
-      className="fixed flex px-3 py-1 space-x-2 text-sm font-semibold text-gray-900 bg-white border border-gray-300 rounded shadow-sm place-items-center right-5 bottom-5 dark:bg-trueGray-900 dark:border-trueGray-700 dark:text-trueGray-300">
+      className="fixed flex px-3 py-1 space-x-2 text-sm font-semibold text-gray-900 bg-white border border-gray-300 rounded shadow-sm place-items-center right-5 bottom-5 dark:bg-trueGray-900 dark:border-trueGray-700 dark:text-trueGray-300"
+    >
       <svg
         width="20"
         height="20"
         viewBox="0 0 30 30"
         fill="none"
         className="w-4 h-4"
-        xmlns="http://www.w3.org/2000/svg">
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <rect
           width="30"
           height="29.5385"

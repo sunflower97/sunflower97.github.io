@@ -32,7 +32,7 @@ export default function Post(props) {
       {posts && siteConfig && (
         <Layout {...siteConfig}>
           <NextSeo
-            title={`${siteConfig?.title}`}
+            title={`${siteConfig?.title || "Sunflower97"}`}
             description={siteConfig?.description || ""}
             canonical={siteConfig?.url}
             openGraph={{
@@ -47,7 +47,7 @@ export default function Post(props) {
                   alt: ""
                 }
               ],
-              site_name: "Stablo"
+              site_name: "Sunflower97"
             }}
             twitter={{
               cardType: "summary_large_image"

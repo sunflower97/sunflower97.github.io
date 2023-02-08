@@ -124,14 +124,15 @@ export default function Post(props) {
                   </div>
                   <div>
                     <p className="text-gray-800 dark:text-gray-400">
-                      {post.author.name}
+                      {post.author?.name}
                     </p>
                     <div className="flex items-center space-x-2 text-sm">
                       <time
                         className="text-gray-500 dark:text-gray-400"
                         dateTime={
                           post?.publishedAt || post._createdAt
-                        }>
+                        }
+                      >
                         {format(
                           parseISO(
                             post?.publishedAt || post._createdAt
