@@ -1,0 +1,47 @@
+# .github/workflows/build-and-deploy.yml
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          # update the Node version to meet your needs
+          node-version: 17
+          cache: yarn
+
+      - name: Create .env file
+        run: |
+          touch .env
+          echo SANITY_API_PROJECT_ID=${{secrets.PROJECT_ID}} >> .env
+          echo SANITY_STUDIO_API_PROJECT_ID=${{secrets.PROJECT_ID}} >> .env
+          echo NEXT_PUBLIC_SANITY_DATASET="production" >> .env
+          echo SANITY_API_DATASET="production" >> .env
+          echo SANITY_STUDIO_API_DATASET="production" >> .env
+          echo SANITY_API_READ_TOKEN=${{secrets.SANITY_API_READ_TOKEN}} >> .env
+          echo SANITY_API_WRITE_TOKEN=${{secrets.SANITY_API_WRITE_TOKEN}} >> .env
+          echo NODE_ENV=${{secrets.NODE_ENV}} >> .env
+          echo NEXT_PUBLIC_SANITY_PROJECT_ID=${{secrets.PROJECT_ID}} >> .env
+
+      - name: Build
+        run: |
+          cat .env
+          yarn install --frozen-lockfile
+          yarn run build
+          touch out/.nojekyll
+
+      - name: Deploy
+        # https://github.com/JamesIves/github-pages-deploy-action
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: out
